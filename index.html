@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image gallary</title>
+    <link rel="icon" href="imagesgal/gallery.webp">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Nature Image Gallery</h1>
+    <div class="full-img" id="full-imgbox">
+        <img src="imagesgal/anima1.jpg" alt="" id="fullimg">
+        <span onclick="colseFullImg()">&times</span>
+    </div>
+    <div class="img-gallery">
+        <img src="imagesgal/anima1.jpg" alt="" onclick="openFullImg(this.src)" >
+        <img src="imagesgal/bir1.jpg" alt="" onclick="openFullImg(this.src)"  >
+        <img src="imagesgal/insect1.jpg" alt="" onclick="openFullImg(this.src)" >
+        <img src="imagesgal/nature1.jpg" alt="" onclick="openFullImg(this.src)" >
+        <img src="imagesgal/anima4.jpg" alt="" onclick="openFullImg(this.src)" >
+        <img src="imagesgal/bir2.jpg" alt="" onclick="openFullImg(this.src)" >
+        <img src="imagesgal/insect2.jpg" alt="" onclick="openFullImg(this.src)" >
+        <img src="imagesgal/nature2.jpg" alt="" onclick="openFullImg(this.src)" >
+        <img src="imagesgal/anima6.jpg" alt="" onclick="openFullImg(this.src)" >
+        <img src="imagesgal/bir3.jpg" alt="" onclick="openFullImg(this.src)" >
+        <img src="imagesgal/insect3.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="imagesgal/nature3.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="imagesgal/animal2.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="imagesgal/bir4.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="imagesgal/insect4.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="imagesgal/nature4.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="imagesgal/animal5.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="imagesgal/bir6.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="imagesgal/nature5.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="imagesgal/animal3.jpg" alt="" onclick="openFullImg(this.src)">
+    </div>
+</div>
+
+<script>
+    var fullimgbox = document.getElementById("full-imgbox");
+    var fullimg = document.getElementById("fullimg");
+
+
+    function openFullImg(pic){
+        fullimgbox.style.display = "flex"
+        fullimg.src = pic;
+    }
+
+    function colseFullImg(){
+        fullimgbox.style.display = "none"  
+    }
+</script>
+</body>
+</html>
